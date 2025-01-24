@@ -19,7 +19,6 @@ public:
     void registerCustomer();
     void loginCustomer();
     void forgotPassword();
-    void booking();
 
 private:
 
