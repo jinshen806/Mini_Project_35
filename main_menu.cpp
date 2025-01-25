@@ -11,8 +11,7 @@
 #include "reservation.hpp"
 #include "ticket.hpp"
 #include "cancelreservation.hpp"
-
-#include "seatreservation.hpp"
+#include "seatReservation.hpp"
 
 using namespace std;
 
@@ -64,7 +63,7 @@ void mainMenu(LoginRegisterForgot &loginregisterforgot)
             if (isLoggedIn) 
             {
                 makeReservation(loginCustomer);
-                seatreservation(loginCustomer);
+                seatReservation();
             } 
             else 
             {
