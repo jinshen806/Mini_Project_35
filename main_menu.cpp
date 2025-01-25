@@ -64,7 +64,7 @@ void mainMenu(LoginRegisterForgot &loginregisterforgot)
             if (isLoggedIn) 
             {
                 makeReservation(loginCustomer);
-                seatreservation(loginCustomer);
+                seatReservation();
             } 
             else 
             {
