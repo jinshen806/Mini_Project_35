@@ -32,7 +32,7 @@ void mainMenu(LoginRegisterForgot &loginregisterforgot)
     cout << "\t\t\t\t\t|                  Press 2 ---- 2) Register Customer ID            |" << endl;
     cout << "\t\t\t\t\t|                  Press 3 ---- 3) Forget password                 |" << endl;
     cout << "\t\t\t\t\t|                  Press 4 ---- 4) Airline ticket reservation      |" << endl;
-    cout << "\t\t\t\t\t|                  Press 5 ---- 5) Ticket bill                     |" << endl;
+    cout << "\t\t\t\t\t|                  Press 5 ---- 5) Ticket                          |" << endl;
     cout << "\t\t\t\t\t|                  Press 6 ---- 6) Cancel reservation              |" << endl;
     cout << "\t\t\t\t\t|                  Press 7 ---- 7) Exit                            |" << endl;
     cout << "\t\t\t\t\t|__________________________________________________________________|" << endl;
