@@ -91,22 +91,39 @@ public:
         };
     }
 
-    void displaySeats() {
-        for (const auto &flightClass : flightClasses) {
-            cout << "\n\t\t\t\t\t                      " << flightClass.className << " Seats:\n";
-
+    void displaySeats(FlightClass* flightClass = nullptr) {
+        if (flightClass) {
+            // Display seats for a specific class
+            cout << "\n\t\t\t\t\t                      " << flightClass->className << " Seats:\n";
             cout << "\t\t\t\t\t          ";
-            for (char col = 'A'; col < 'A' + flightClass.columns; col++) {
+            for (char col = 'A'; col < 'A' + flightClass->columns; col++) {
                 cout << "  " << col << "   ";
             }
             cout << endl;
 
-            for (int i = 0; i < flightClass.rows; i++) {
+            for (int i = 0; i < flightClass->rows; i++) {
                 cout << setw(49) << (i + 1) << " ";
-                for (int j = 0; j < flightClass.columns; j++) {
-                    cout << " [" << flightClass.seats[i][j] << "]  ";
+                for (int j = 0; j < flightClass->columns; j++) {
+                    cout << " [" << flightClass->seats[i][j] << "]  ";
                 }
                 cout << endl;
+            }
+        } else {
+            for (const auto &fc : flightClasses) {
+                cout << "\n\t\t\t\t\t                      " << fc.className << " Seats:\n";
+                cout << "\t\t\t\t\t          ";
+                for (char col = 'A'; col < 'A' + fc.columns; col++) {
+                    cout << "  " << col << "   ";
+                }
+                cout << endl;
+
+                for (int i = 0; i < fc.rows; i++) {
+                    cout << setw(49) << (i + 1) << " ";
+                    for (int j = 0; j < fc.columns; j++) {
+                        cout << " [" << fc.seats[i][j] << "]  ";
+                    }
+                    cout << endl;
+                }
             }
         }
     }
@@ -130,25 +147,25 @@ public:
         }
 
         cout << "\n\t\t\t\t\t                Available seats in " << flightClass->className << ":\n";
-        displaySeats();
+        displaySeats(flightClass);
 
         string seatInput;
-        cout << "\n\t\t\t\t\t          Enter seat(s) to book (e.g., 1A, 10B, 12C): ";
+        cout << "\n\t\t\t\t\t          Enter seat(s) to book (e.g. 1A 10B 12C): ";
         getline(cin, seatInput);
 
-        stringstream ss(seatInput);
+        istringstream iss(seatInput);
         string seat;
 
-        while (ss >> seat) {
-        if (bookSingleSeat(flightClass, seat)) {
-            cout << "\t\t\t\t\t            Seat " << seat << " successfully booked in " << flightClass->className << ".\n";
+        while (iss >> seat) {
+            if (bookSingleSeat(flightClass, seat)) {
+                cout << "\t\t\t\t\t            Seat " << seat << " successfully booked in " << flightClass->className << ".\n";
+            }
         }
-    }
     }
 
     bool bookSingleSeat(FlightClass* flightClass, const string& seatInput) {
         if (seatInput.length() < 2 || seatInput[seatInput.length() - 1] < 'A' || seatInput[seatInput.length() - 1] >= 'A' + flightClass->columns) {
-            cout << "\t\t\t\t\t    Invalid seat input. Please enter in the format: RowColumn (e.g., 1A, 10B, 12C).\n";
+            cout << "\t\t\t\t\t    Invalid seat input. Please enter in the format: RowColumn (e.g. 1A, 10B, 12C).\n";
             return false;
         }
 
