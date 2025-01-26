@@ -12,7 +12,7 @@
   | NUR FARZANA IZZATI BINTI BARZAN SHAH |      23303059     |
   |______________________________________|___________________|
   TITLE: AIRLINE RESERVATION SYSTEM  
-  Purpose: To provide a system that allows users to book airline tickets, view ticket bills, and cancel reservations.
+  Purpose: To provide a system that allows users to reserve airline flights with different class and seats, view ticket bills, and cancel reservations.
 */
 
 /*Programmer name: TANG JIN SHEN

@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -6,22 +5,25 @@
 #include <iomanip>
 using namespace std;
 
-struct FlightClass {
+struct FlightClass
+{
     string className;
     vector<string> seats;
     int rows;
     int columns;
 };
 
-class FlightReservationSystem {
+class FlightReservationSystem 
+{
 private:
     vector<FlightClass> flightClasses;
     const string dataFile = "seats_data.txt";
 
     void loadData() {
         ifstream input(dataFile);
-        if (!input.is_open()) {
-            cout << "Error opening file. No previous booking data found.\n";
+        if (!input.is_open()) 
+        {
+            cout << "\t\t\t\t\t\t\tError opening file. No previous booking data found.\n";
             return;
         }
 
