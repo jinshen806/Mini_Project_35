@@ -15,7 +15,7 @@ this function will be used in main_menu.cpp*/
 void cancelReservation(const string& username) 
 {
     ifstream infile("reservations.txt");
-    ofstream tempFile("temp.txt");
+    ofstream tempFile("temp.txt");//this is to create a temporary file to store the reservation detail
 
     if (!infile.is_open() || !tempFile.is_open()) 
     {
@@ -44,8 +44,8 @@ void cancelReservation(const string& username)
     infile.close();
     tempFile.close();
 
-    remove("reservations.txt");
-    rename("temp.txt", "reservations.txt");
+    remove("reservations.txt");//this is to remove the reservation.txt file
+    rename("temp.txt", "reservations.txt");//this is to rename the temp.txt file to reservation.txt file
 
     if (found) 
     {
