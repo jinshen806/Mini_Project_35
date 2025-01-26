@@ -11,8 +11,7 @@
 #include "reservation.hpp"
 #include "ticket.hpp"
 #include "cancelreservation.hpp"
-
-#include "seatreservation.hpp"
+#include "seatReservation.hpp"
 
 using namespace std;
 
