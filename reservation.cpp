@@ -42,9 +42,9 @@ void makeReservation(const string& username)
     {
         case 1:
         cout << "\n\t\t\t\t\t\t\t\tSelect time of flight to United States of America:\n";
-        cout << "\n\t\t\t\t\t\t\t\t1. 10:00a.m.  RM 1500\n";
-        cout << "\n\t\t\t\t\t\t\t\t2. 2:00p.m.   RM 2000\n";
-        cout << "\n\t\t\t\t\t\t\t\t3. 6:00p.m.   RM 1300\n";
+        cout << "\n\t\t\t\t\t\t\t\t1. 10:00a.m.  \n";
+        cout << "\n\t\t\t\t\t\t\t\t2. 2:00p.m.   \n";
+        cout << "\n\t\t\t\t\t\t\t\t3. 6:00p.m.   \n";
         cout << "\n\t\t\t\t\t\t\t\tEnter your choice > ";
         cin >> choice2;
         if( choice2 < 1 || choice2 > 3)
@@ -58,9 +58,9 @@ void makeReservation(const string& username)
 
         case 2:
         cout << "\n\t\t\t\t\t\t\t\tSelect time of flight to United Kingdom:\n";
-        cout << "\n\t\t\t\t\t\t\t\t1. 10:00a.m.  RM 2000\n";
-        cout << "\n\t\t\t\t\t\t\t\t2. 2:00p.m.   RM 3000\n";
-        cout << "\n\t\t\t\t\t\t\t\t3. 6:00p.m.   RM 2500\n";
+        cout << "\n\t\t\t\t\t\t\t\t1. 10:00a.m.  \n";
+        cout << "\n\t\t\t\t\t\t\t\t2. 2:00p.m.   \n";
+        cout << "\n\t\t\t\t\t\t\t\t3. 6:00p.m.   \n";
         cout << "\n\t\t\t\t\t\t\t\tEnter your choice > ";
         cin >> choice2;
         if( choice2 < 1 || choice2 > 3)
@@ -74,9 +74,9 @@ void makeReservation(const string& username)
 
         case 3:
         cout << "\n\t\t\t\t\t\t\t\tSelect time of flight to Japan:\n";
-        cout << "\n\t\t\t\t\t\t\t\t1. 10:00a.m.  RM 3000\n";
-        cout << "\n\t\t\t\t\t\t\t\t2. 2:00p.m.   RM 2500\n";
-        cout << "\n\t\t\t\t\t\t\t\t3. 6:00p.m.   RM 2200\n";
+        cout << "\n\t\t\t\t\t\t\t\t1. 10:00a.m.  \n";
+        cout << "\n\t\t\t\t\t\t\t\t2. 2:00p.m.   \n";
+        cout << "\n\t\t\t\t\t\t\t\t3. 6:00p.m.   \n";
         cout << "\n\t\t\t\t\t\t\t\tEnter your choice > ";
         cin >> choice2;
         if( choice2 < 1 || choice2 > 3)
@@ -90,9 +90,9 @@ void makeReservation(const string& username)
 
         case 4:
         cout << "\n\t\t\t\t\t\t\t\tSelect time of flight to France:\n";
-        cout << "\n\t\t\t\t\t\t\t\t1. 10:00a.m.  RM 2450\n";
-        cout << "\n\t\t\t\t\t\t\t\t2. 2:00p.m.   RM 2700\n";
-        cout << "\n\t\t\t\t\t\t\t\t3. 6:00p.m.   RM 2900\n";
+        cout << "\n\t\t\t\t\t\t\t\t1. 10:00a.m.  \n";
+        cout << "\n\t\t\t\t\t\t\t\t2. 2:00p.m.   \n";
+        cout << "\n\t\t\t\t\t\t\t\t3. 6:00p.m.   \n";
         cout << "\n\t\t\t\t\t\t\t\tEnter your choice > ";
         cin >> choice2;
         if( choice2 < 1 || choice2 > 3)
@@ -106,9 +106,9 @@ void makeReservation(const string& username)
 
         case 5:
         cout << "\n\t\t\t\t\t\t\t\tSelect time of flight to Australia:\n";
-        cout << "\n\t\t\t\t\t\t\t\t1. 10:00a.m.  RM 2460\n";
-        cout << "\n\t\t\t\t\t\t\t\t2. 2:00p.m.   RM 3300\n";
-        cout << "\n\t\t\t\t\t\t\t\t3. 6:00p.m.   RM 2500\n";
+        cout << "\n\t\t\t\t\t\t\t\t1. 10:00a.m.  \n";
+        cout << "\n\t\t\t\t\t\t\t\t2. 2:00p.m.   \n";
+        cout << "\n\t\t\t\t\t\t\t\t3. 6:00p.m.   \n";
         cout << "\n\t\t\t\t\t\t\t\tEnter your choice > ";
         cin >> choice2;
         if( choice2 < 1 || choice2 > 3)
@@ -122,9 +122,9 @@ void makeReservation(const string& username)
 
         case 6:
         cout << "\n\t\t\t\t\t\t\t\tSelect time of flight to Singapore:\n";
-        cout << "\n\t\t\t\t\t\t\t\t1. 10:00a.m.  RM 900\n";
-        cout << "\n\t\t\t\t\t\t\t\t2. 2:00p.m.   RM 700\n";
-        cout << "\n\t\t\t\t\t\t\t\t3. 6:00p.m.   RM 500\n";
+        cout << "\n\t\t\t\t\t\t\t\t1. 10:00a.m.  \n";
+        cout << "\n\t\t\t\t\t\t\t\t2. 2:00p.m.   \n";
+        cout << "\n\t\t\t\t\t\t\t\t3. 6:00p.m.   \n";
         cout << "\n\t\t\t\t\t\t\t\tEnter your choice > ";
         cin >> choice2;
         if( choice2 < 1 || choice2 > 3)
@@ -148,11 +148,8 @@ void makeReservation(const string& username)
     outfile << username << "," << destinations[choice - 1] << "," << times[choice2 - 1] << endl;
         cout << "\t\t\t\t\t ___________________________________________________________________" << endl;
         cout << "\t\t\t\t\t|                                                                  |" << endl;
-        cout << "\t\t\t\t\t|                     Reservation successfull!!!!                  |" << endl;
-        cout << "\t\t\t\t\t|                   Thanks for choosing our airline!!              |" << endl;
-        cout << "\t\t\t\t\t|                      Hope have a nice journey                    |" << endl;
+        cout << "\t\t\t\t\t|                  Please select your class and seat               |" << endl;
         cout << "\t\t\t\t\t|__________________________________________________________________|" << endl;
-        cout <<"\n\n" << endl;
 
     outfile.close();
 }
